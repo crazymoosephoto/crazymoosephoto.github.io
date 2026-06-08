@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Moose Photography | Portfolio</title>
+    <meta name="description" content="Crazy Moose Photography - Profesionalni fotografski portfolio. Pogledajte galeriju radova i kontaktirajte nas.">
+    <style>
+        /* Osnovni stilovi za moderan i tamni izgled */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Zaglavlje (Header) */
+        header {
+            text-align: center;
+            padding: 60px 20px 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            font-weight: 300;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #a0a0a0;
+            letter-spacing: 2px;
+        }
+
+        /* Navigacija i gumbi s animacijom */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: all 0.4s ease; /* Glatki efekt animacije */
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: #121212;
+            transform: translateY(-3px); /* Lagano podizanje gumba */
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Glavna sekcija i Galerija */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background-color: #1c1c1c;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02); /* Blago povećanje slike na prijelaz miša */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item-desc {
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #888888;
+            text-align: center;
+            border-top: 1px solid #2a2a2a;
+        }
+
+        /* Podnožje (Footer) */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #1c1c1c;
+            color: #666666;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        footer a {
+            color: #a0a0a0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        /* Prilagodba za mobitele */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Crazy Moose Photography</h1>
+        <p>Uhvaćeni trenuci. Bezvremenske priče.</p>
+        <div class="nav-links">
+            <a href="#galerija" class="btn">Galerija</a>
+            <a href="#kontakt" class="btn">Kontakt</a>
+        </div>
+    </header>
+
+    <div class="container" id="galerija">
+        <!-- Ovdje počinje mreža fotografija -->
+        <div class="gallery">
+            
+            <!-- Slika 1 (Placeholder) -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Crazy Moose Photography - Profesionalna kamera i objektiv u studiju">
+                <div class="gallery-item-desc">Uskoro: Vaša prva predivna fotografija</div>
+            </div>
+
+            <!-- Slika 2 (Placeholder) -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Crazy Moose Photography - Mistična maglovita šuma u Švedskoj">
+                <div class="gallery-item-desc">Uskoro: Priroda i pejzaži kroz moj objektiv</div>
+            </div>
+
+            <!-- Slika 3 (Placeholder) -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Crazy Moose Photography - Elegantni crno-bijeli portret klijenta">
+                <div class="gallery-item-desc">Uskoro: Umjetnički portreti i trenuci</div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="kontakt">
+        <p style="margin-bottom: 15px; font-size: 1rem; color: #a0a0a0;">Zainteresirani za suradnju?</p>
+        <p style="margin-bottom: 25px;"><a href="mailto:info@crazymoose.se" class="btn">Pošalji E-mail</a></p>
+        <p>&copy; 2026 CRAZY MOOSE PHOTOGRAPHY. Sva prava pridržana.</p>
+    </footer>
+
+</body>
+</html>
